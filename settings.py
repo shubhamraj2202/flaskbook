@@ -1,3 +1,3 @@
 SECRET_KEY = '**********'
 DEBUG = True
-MONGO_DB = 'flaskbook'
+MONGODB_DB = 'flaskbook'
