@@ -3,9 +3,10 @@ from flask.ext.mongoengine import MongoEngine
 
 db = MongoEngine()
 
-def create_app():
+def create_app(**config_overrides):
     app = Flask(__name__)
     app.config.from_pyfile('settings.py') #update app setiings in app.config
+    app.config.update(config_overrides)
     db.init_app(app) # Initialize database within the flask application
     from user.views import user_app # Importing here to avoid circular imports
     app.register_blueprint(user_app)
