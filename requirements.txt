@@ -2,3 +2,7 @@ Flask==0.10.1
 Flask-Script==2.0.5
 flask-mongoengine==0.7.4
 mongoengine==0.10.0
+Flask-WTF==0.12
+bcrypt==1.1.0
+werkzeug==0.16.0
+email_validator==1.1.1
